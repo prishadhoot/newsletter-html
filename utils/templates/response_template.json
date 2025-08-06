@@ -1,0 +1,19 @@
+{
+    "past_24_hours": {
+      "24h_1": "Value for first item",
+      "24h_2": "Value for second item",
+      "24h_3": "Value for third item",
+      "24h_4": "Value for fourth item",
+      "24h_5": "Value for fifth item",
+      "24h_6": "Value for sixth item"
+    },
+    "whats_going_viral": {
+      "viral_1": "First trending topic",
+      "viral_2": "Second trending topic",
+      "viral_3": "Third trending topic"
+    },
+    "innovations_and_developments": {
+      "company_developments": "Summary of what companies are doing."
+    }
+  }
+  

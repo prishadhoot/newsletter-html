@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intel Report</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0a0f1a;
+      color: #d6e4f0;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #00e0ff;
+      text-decoration: none;
+    }
+
+    .header {
+      background-image: url('header-image.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(10, 15, 26, 0.7); /* dark overlay */
+    }
+
+    .header-content {
+      position: relative;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      background-color: #1c253b;
+      border-radius: 50%;
+    }
+
+    .summary-btn {
+      padding: 10px 20px;
+      background-color: #00e0ff;
+      color: #0a0f1a;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #00e0ff55;
+    }
+
+    .header-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .date-line {
+      font-size: 0.95rem;
+      color: #9db5d9;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin: 40px 0 10px;
+      color: #00e0ff;
+      border-bottom: 2px solid #2b3550;
+      padding-bottom: 5px;
+    }
+
+    .grid-24h {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-24h div {
+      background-color: #131a2b;
+      padding: 12px;
+      border-radius: 6px;
+      box-shadow: 0 0 5px #00000044;
+    }
+
+    .with-image-right,
+    .with-image-left {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .with-image-right img,
+    .with-image-left img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00000066;
+    }
+
+    .footer {
+      background-color: #131a2b;
+      color: #d6e4f0;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      border-top: 1px solid #2b3550;
+    }
+
+    .subscribe input[type="email"] {
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      margin-right: 10px;
+      background-color: #0a0f1a;
+      color: #d6e4f0;
+      border: 1px solid #2b3550;
+    }
+
+    .subscribe button {
+      padding: 10px 15px;
+      background-color: #00bfff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      color: #0a0f1a;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00bfff88;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      filter: brightness(0.8);
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #d6e4f0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-content">
+      <div class="header-top">
+        <div class="logo"></div>
+        <a href="#" class="summary-btn">Get Summary</a>
+      </div>
+      <div class="header-title">INTEL REPORT</div>
+    </div>
+  </div>
+
+  <!-- Date Line -->
+  <div class="section">
+    <div class="date-line">3 August, 2025 - Sunday</div>
+
+    <!-- Past 24 Hours -->
+    <div class="section-title">PAST 24 HOURS</div>
+    <div class="with-image-right">
+      <div class="grid-24h">
+        <div>{24h_1}</div>
+        <div>{24h_2}</div>
+        <div>{24h_3}</div>
+        <div>{24h_4}</div>
+        <div>{24h_5}</div>
+        <div>{24h_6}</div>
+      </div>
+      <img src="daily-summary.jpg" alt="Daily Summary Image">
+    </div>
+  </div>
+
+  <!-- What's Going Viral -->
+  <div class="section">
+    <div class="section-title">WHAT'S GOING VIRAL?</div>
+    <div class="with-image-left">
+      <img src="trending-topic.jpg" alt="Viral Topic">
+      <ul>
+        <li>{viral_1}</li>
+        <li>{viral_2}</li>
+        <li>{viral_3}</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Innovations & Developments -->
+  <div class="section">
+    <div class="section-title">INNOVATIONS & DEVELOPMENTS</div>
+    <p style="color: #9db5d9;">Here's what companies are up to:</p>
+    <p>{company_developments}</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="subscribe">
+      <input type="email" placeholder="Your email">
+      <button>Subscribe</button>
+    </div>
+    <div class="social-icons">
+      <img src="linkedin-icon.png" alt="LinkedIn">
+      <img src="x-icon.png" alt="X">
+    </div>
+  </div>
+
+</body>
+</html>

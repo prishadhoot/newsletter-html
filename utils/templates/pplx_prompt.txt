@@ -1,0 +1,38 @@
+Give me a summary of the most relevant AI and tech news from the past 24 hours, divided into three sections:
+
+Past 24 Hours – 6 brief tech/AI updates, each no more than 30 words.
+
+What's Going Viral? – 3 trending or viral stories in tech/AI, each no more than 50 words.
+
+Innovations & Developments – A single paragraph (max 200 words) summarizing what major tech companies are building, testing, or releasing.
+
+Format the response exactly like this JSON:
+
+{
+  "past_24_hours": {
+    "24h_1": "",
+    "24h_2": "",
+    "24h_3": "",
+    "24h_4": "",
+    "24h_5": "",
+    "24h_6": ""
+  },
+  "whats_going_viral": {
+    "viral_1": "",
+    "viral_2": "",
+    "viral_3": ""
+  },
+  "innovations_and_developments": {
+    "company_developments": ""
+  }
+}
+
+Instructions:
+
+Use actual current events from the past 24 hours in AI/tech.
+
+Keep each section within the word limits.
+
+Use concise, factual language.
+
+Do not include any explanation, comments, or text outside the JSON.

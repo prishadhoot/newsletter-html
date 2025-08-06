@@ -1,0 +1,18 @@
+{
+  "past_24_hours": {
+    "24h_1": "1. This is for testing purpose. OpenAI announced new model updates",
+    "24h_2": "2. This is for testing purpose. Meta released a new Llama version",
+    "24h_3": "3. This is for testing purpose. Google DeepMind teased Gemini 3",
+    "24h_4": "4. This is for testing purpose. Hugging Face launched new datasets",
+    "24h_5": "5. This is for testing purpose. Nvidia reported Q2 earnings",
+    "24h_6": "6. This is for testing purpose. Stability AI launched new image tools"
+  },
+  "whats_going_viral": {
+    "viral_1": "This is for testing purpose. Elon Musk's AI chip venture dominates headlines",
+    "viral_2": "This is for testing purpose. Threads reaches 500M users in 2 months",
+    "viral_3": "This is for testing purpose. Whisper model used in real-time classrooms"
+  },
+  "innovations_and_developments": {
+    "company_developments": "Anthropic is exploring multi-modal Claude models. Meanwhile, OpenAI partners with Stack Overflow for AI coding co-pilot training. Google is testing AI-generated UX flows in its Material Design team."
+  }
+}
